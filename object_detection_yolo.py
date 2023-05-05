@@ -138,7 +138,7 @@ if (args.image):
 elif (args.video):
     # Open the video file
     if not os.path.isfile(args.video):
-        print("Input video file ", args.video, " doesn't exist")4
+        print("Input video file ", args.video, " doesn't exist")
         sys.exit(1)
     cap = cv.VideoCapture(args.video)
     outputFile = args.video[:-4]+'_yolo_out_py.avi'
